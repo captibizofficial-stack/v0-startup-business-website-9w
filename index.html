@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captibiz - Professional Business Plans & Consulting Services</title>
+    <meta name="description" content="Expert business plan writing, financial modeling, and consulting services for startups, loans, and investor visas. Trusted by entrepreneurs across the United States.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i data-lucide="bar-chart-3"></i>
+                    </div>
+                    <span class="logo-text">Captibiz</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="cta-desktop">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="get-started.html" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile hidden" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="#services" class="nav-link" onclick="closeMobileMenu()">Services</a>
+                    <a href="#pricing" class="nav-link" onclick="closeMobileMenu()">Pricing</a>
+                    <a href="#about" class="nav-link" onclick="closeMobileMenu()">About</a>
+                    <a href="#contact" class="nav-link" onclick="closeMobileMenu()">Contact</a>
+                    <div class="mobile-cta">
+                        <a href="login.html" class="btn btn-outline">Login</a>
+                        <a href="get-started.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Content -->
+                    <div class="hero-text">
+                        <div class="hero-heading">
+                            <h1>Professional <span class="text-primary">Business Plans</span> That Get Results</h1>
+                            <p>Expert business plan writing, financial modeling, and consulting services for startups, loan applications, and investor visas. Trusted by entrepreneurs across the United States.</p>
+                        </div>
+
+                        <!-- Key Benefits -->
+                        <div class="benefits">
+                            <div class="benefit">
+                                <i data-lucide="check-circle" class="benefit-icon"></i>
+                                <span>90% loan approval success rate</span>
+                            </div>
+                            <div class="benefit">
+                                <i data-lucide="check-circle" class="benefit-icon"></i>
+                                <span>Expert financial modeling & projections</span>
+                            </div>
+                            <div class="benefit">
+                                <i data-lucide="check-circle" class="benefit-icon"></i>
+                                <span>Investor visa documentation support</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="hero-cta">
+                            <a href="get-started.html" class="btn btn-primary btn-lg">
+                                Get Started Today
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                            <a href="#pricing" class="btn btn-outline btn-lg">View Pricing</a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image -->
+                    <div class="hero-image">
+                        <div class="image-card">
+                            <img src="professional-business-meeting-with-charts-and-grap.jpg" alt="Professional business consulting" />
+                        </div>
+                        <!-- Floating Stats -->
+                        <div class="stat-card stat-left">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Plans Created</div>
+                        </div>
+                        <div class="stat-card stat-right">
+                            <div class="stat-number">$50M+</div>
+                            <div class="stat-label">Funding Secured</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our <span class="text-primary">Expert Services</span></h2>
+                    <p>Comprehensive business consulting services designed to help you succeed at every stage of your entrepreneurial journey.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i data-lucide="file-text"></i>
+                            </div>
+                            <div>
+                                <h3>Business Plan Writing</h3>
+                                <p>Comprehensive business plans tailored for your industry and goals. Perfect for startups, expansions, and strategic planning.</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <ul class="feature-list">
+                                <li>Market Analysis</li>
+                                <li>Competitive Research</li>
+                                <li>Executive Summary</li>
+                                <li>Implementation Timeline</li>
+                            </ul>
+                            <div class="service-footer">
+                                <span class="price">Starting at $497</span>
+                                <a href="get-started.html" class="btn btn-sm">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i data-lucide="trending-up"></i>
+                            </div>
+                            <div>
+                                <h3>Financial Modeling</h3>
+                                <p>Detailed financial projections and modeling to demonstrate your business viability and growth potential.</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <ul class="feature-list">
+                                <li>5-Year Projections</li>
+                                <li>Cash Flow Analysis</li>
+                                <li>Break-even Analysis</li>
+                                <li>Scenario Planning</li>
+                            </ul>
+                            <div class="service-footer">
+                                <span class="price">Starting at $397</span>
+                                <a href="get-started.html" class="btn btn-sm">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i data-lucide="globe"></i>
+                            </div>
+                            <div>
+                                <h3>Investor Visa Support</h3>
+                                <p>Specialized documentation for E-2, EB-5, and other investor visa applications with immigration expertise.</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <ul class="feature-list">
+                                <li>USCIS Compliance</li>
+                                <li>Investment Analysis</li>
+                                <li>Job Creation Plans</li>
+                                <li>Legal Documentation</li>
+                            </ul>
+                            <div class="service-footer">
+                                <span class="price">Starting at $897</span>
+                                <a href="get-started.html" class="btn btn-sm">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i data-lucide="dollar-sign"></i>
+                            </div>
+                            <div>
+                                <h3>Loan Applications</h3>
+                                <p>SBA loan packages and bank financing applications with proven success rates.</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <ul class="feature-list">
+                                <li>SBA Loan Packages</li>
+                                <li>Bank Presentations</li>
+                                <li>Credit Analysis</li>
+                                <li>Collateral Assessment</li>
+                            </ul>
+                            <div class="service-footer">
+                                <span class="price">Starting at $597</span>
+                                <a href="get-started.html" class="btn btn-sm">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <div>
+                                <h3>Pitch Deck Creation</h3>
+                                <p>Investor-ready pitch decks that tell your story and secure funding.</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <ul class="feature-list">
+                                <li>Investor Presentations</li>
+                                <li>Visual Design</li>
+                                <li>Story Development</li>
+                                <li>Q&A Preparation</li>
+                            </ul>
+                            <div class="service-footer">
+                                <span class="price">Starting at $697</span>
+                                <a href="get-started.html" class="btn btn-sm">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i data-lucide="shield"></i>
+                            </div>
+                            <div>
+                                <h3>Due Diligence Support</h3>
+                                <p>Comprehensive due diligence packages for acquisitions and investments.</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <ul class="feature-list">
+                                <li>Financial Audit</li>
+                                <li>Risk Assessment</li>
+                                <li>Valuation Analysis</li>
+                                <li>Compliance Review</li>
+                            </ul>
+                            <div class="service-footer">
+                                <span class="price">Starting at $797</span>
+                                <a href="get-started.html" class="btn btn-sm">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose <span class="text-primary">Captibiz</span>?</h2>
+                    <p>We combine industry expertise with cutting-edge technology to deliver exceptional results for our clients.</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div>
+                            <h3>Industry Expertise</h3>
+                            <p>Over 10 years of experience across multiple industries with proven track record of success.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <div>
+                            <h3>Fast Turnaround</h3>
+                            <p>Most projects completed within 5-7 business days without compromising quality.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div>
+                            <h3>Dedicated Support</h3>
+                            <p>Personal project manager assigned to guide you through every step of the process.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <div>
+                            <h3>90% Success Rate</h3>
+                            <p>Our clients achieve a 90% approval rate for loans and investor applications.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <div>
+                            <h3>Confidentiality</h3>
+                            <p>Your business information is protected with enterprise-grade security and NDAs.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <div>
+                            <h3>Competitive Pricing</h3>
+                            <p>Premium quality services at rates 30-40% below traditional consulting firms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our <span class="text-primary">Clients Say</span></h2>
+                    <p>Don't just take our word for it. Here's what successful entrepreneurs say about working with Captibiz.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                        </div>
+                        <p>"Captibiz helped us secure $2.5M in Series A funding. Their business plan was comprehensive and the financial projections were spot-on. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Sarah Johnson</div>
+                            <div class="author-title">CEO & Founder, TechStart Solutions</div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                        </div>
+                        <p>"The team at Captibiz made our SBA loan application process seamless. We got approved for $500K within 6 weeks. Their expertise is unmatched."</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Michael Chen</div>
+                            <div class="author-title">Co-Founder, Green Energy Innovations</div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                        </div>
+                        <p>"As an immigrant entrepreneur, getting my E-2 visa was crucial. Captibiz's investor visa support was exceptional - approved on first try!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Elena Rodriguez</div>
+                            <div class="author-title">Owner, Fashion Forward LLC</div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                        </div>
+                        <p>"Their financial modeling helped us identify cost savings of $300K annually. The ROI on their services was incredible."</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">David Thompson</div>
+                            <div class="author-title">President, Thompson Manufacturing</div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                        </div>
+                        <p>"Professional, fast, and affordable. Captibiz delivered our business plan in 5 days and it exceeded all expectations."</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Lisa Park</div>
+                            <div class="author-title">Founder, Digital Marketing Pro</div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                        </div>
+                        <p>"The pitch deck they created helped us win a $1M contract. Their presentation skills and design are top-notch."</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Robert Williams</div>
+                            <div class="author-title">Owner, Williams Construction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Transparent <span class="text-primary">Pricing</span></h2>
+                    <p>Choose the perfect package for your business needs. All prices are 30-40% below market rates.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Startup Essentials</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">497</span>
+                            </div>
+                            <p>Perfect for new startups and small businesses</p>
+                        </div>
+                        <div class="pricing-content">
+                            <ul class="feature-list">
+                                <li>Basic Business Plan (15-20 pages)</li>
+                                <li>Market Analysis</li>
+                                <li>Financial Projections (3 years)</li>
+                                <li>Executive Summary</li>
+                                <li>1 Round of Revisions</li>
+                                <li>5-7 Day Delivery</li>
+                            </ul>
+                            <a href="get-started.html" class="btn btn-outline btn-full">Get Started</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3>Professional Plus</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">897</span>
+                            </div>
+                            <p>Comprehensive solution for growing businesses</p>
+                        </div>
+                        <div class="pricing-content">
+                            <ul class="feature-list">
+                                <li>Comprehensive Business Plan (25-35 pages)</li>
+                                <li>Detailed Market & Competitive Analysis</li>
+                                <li>5-Year Financial Projections</li>
+                                <li>Pitch Deck (10 slides)</li>
+                                <li>3 Rounds of Revisions</li>
+                                <li>Priority Support</li>
+                                <li>3-5 Day Delivery</li>
+                            </ul>
+                            <a href="get-started.html" class="btn btn-primary btn-full">Get Started</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Enterprise Premium</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">1,497</span>
+                            </div>
+                            <p>Complete package for established businesses</p>
+                        </div>
+                        <div class="pricing-content">
+                            <ul class="feature-list">
+                                <li>Premium Business Plan (40+ pages)</li>
+                                <li>Advanced Financial Modeling</li>
+                                <li>Investor Presentation Package</li>
+                                <li>Due Diligence Support</li>
+                                <li>Unlimited Revisions</li>
+                                <li>Dedicated Account Manager</li>
+                                <li>1-2 Day Rush Delivery</li>
+                            </ul>
+                            <a href="get-started.html" class="btn btn-outline btn-full">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h2>Ready to Turn Your Business Vision Into Reality?</h2>
+                        <p>Join hundreds of successful entrepreneurs who chose Captibiz for their business planning needs. Get started today with a free consultation.</p>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="get-started.html" class="btn btn-secondary btn-lg">
+                            Start Your Project
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline-white btn-lg">
+                            <i data-lucide="phone"></i>
+                            Free Consultation
+                        </a>
+                    </div>
+
+                    <div class="trust-indicators">
+                        No upfront payment required • Free initial consultation • 100% satisfaction guarantee
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In <span class="text-primary">Touch</span></h2>
+                    <p>Ready to start your project? Contact us today for a free consultation.</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@captibiz.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h3>Location</h3>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" onsubmit="handleContactForm(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="business-plan">Business Plan Writing</option>
+                                <option value="financial-modeling">Financial Modeling</option>
+                                <option value="investor-visa">Investor Visa Support</option>
+                                <option value="loan-application">Loan Applications</option>
+                                <option value="pitch-deck">Pitch Deck Creation</option>
+                                <option value="due-diligence">Due Diligence Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <a href="#" class="footer-logo">
+                        <div class="logo-icon">
+                            <i data-lucide="bar-chart-3"></i>
+                        </div>
+                        <span class="logo-text">Captibiz</span>
+                    </a>
+                    <p>Professional business consulting services for startups, loans, and investor visas across the United States.</p>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Business Plans</a></li>
+                        <li><a href="#services">Financial Modeling</a></li>
+                        <li><a href="#services">Investor Visa Support</a></li>
+                        <li><a href="#services">Loan Applications</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i data-lucide="mail"></i>
+                            <span>info@captibiz.com</span>
+                        </li>
+                        <li>
+                            <i data-lucide="phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <span>New York, NY</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Captibiz. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

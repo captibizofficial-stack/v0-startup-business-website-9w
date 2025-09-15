@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - Captibiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i data-lucide="bar-chart-3"></i>
+                    </div>
+                    <span class="logo-text">Captibiz</span>
+                </a>
+                <a href="index.html" class="btn btn-outline">Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding: 2rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <h1>Get Started with Your Business Plan</h1>
+                <p>Tell us about your project and we'll provide a custom quote within 24 hours.</p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <form class="contact-form" onsubmit="handleGetStartedForm(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="industry">Industry *</label>
+                        <select id="industry" name="industry" required>
+                            <option value="">Select your industry</option>
+                            <option value="technology">Technology</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="retail">Retail</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="food-beverage">Food & Beverage</option>
+                            <option value="real-estate">Real Estate</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Primary Service Needed *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="business-plan">Business Plan Writing</option>
+                            <option value="financial-modeling">Financial Modeling</option>
+                            <option value="investor-visa">Investor Visa Support</option>
+                            <option value="loan-application">Loan Applications</option>
+                            <option value="pitch-deck">Pitch Deck Creation</option>
+                            <option value="due-diligence">Due Diligence Support</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">Desired Timeline *</label>
+                        <select id="timeline" name="timeline" required>
+                            <option value="">Select timeline</option>
+                            <option value="rush">Rush (1-2 days) - Additional fee applies</option>
+                            <option value="standard">Standard (3-5 days)</option>
+                            <option value="extended">Extended (1-2 weeks)</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-500">Under $500</option>
+                            <option value="500-1000">$500 - $1,000</option>
+                            <option value="1000-2000">$1,000 - $2,000</option>
+                            <option value="2000-plus">$2,000+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Project Description *</label>
+                        <textarea id="description" name="description" rows="6" placeholder="Please describe your business, goals, and specific requirements..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full btn-lg">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        function handleGetStartedForm(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would send data to your backend
+            alert('Thank you! We have received your request and will send you a custom quote within 24 hours.');
+            
+            // Redirect to thank you page or reset form
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
