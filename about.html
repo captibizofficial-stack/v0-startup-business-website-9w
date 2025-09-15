@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Captibiz</title>
-    <meta name="description" content="Learn about Captibiz - Professional business consulting services for startups, loans, and investor visas.">
+    <title>About Us - Captibiz | Expert Business Consulting Team</title>
+    <meta name="description" content="Learn about Captibiz - Professional business consulting services for startups, loans, and investor visas. Meet our expert team and discover our proven methodology.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,108 +22,233 @@
                     </div>
                     <span class="logo-text">Captibiz</span>
                 </a>
+
+                <!-- Updated navigation to use separate pages instead of sections -->
                 <nav class="nav-desktop">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="index.html#services" class="nav-link">Services</a>
-                    <a href="index.html#pricing" class="nav-link">Pricing</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="index.html#contact" class="nav-link">Contact</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="about.html" class="nav-link active">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
                 </nav>
+
                 <div class="cta-desktop">
                     <a href="login.html" class="btn btn-outline">Login</a>
                     <a href="get-started.html" class="btn btn-primary">Get Started</a>
                 </div>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+
+            <div class="nav-mobile hidden" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="services.html" class="nav-link" onclick="closeMobileMenu()">Services</a>
+                    <a href="pricing.html" class="nav-link" onclick="closeMobileMenu()">Pricing</a>
+                    <a href="about.html" class="nav-link active" onclick="closeMobileMenu()">About</a>
+                    <a href="contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a>
+                    <div class="mobile-cta">
+                        <a href="login.html" class="btn btn-outline">Login</a>
+                        <a href="get-started.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <!-- Added page header section for consistency -->
+        <section class="page-header">
             <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <div class="hero-heading">
-                            <h1>About <span class="text-primary">Captibiz</span></h1>
-                            <p>We're a team of experienced business consultants dedicated to helping entrepreneurs turn their visions into successful, fundable businesses.</p>
-                        </div>
-                    </div>
+                <div class="page-header-content">
+                    <h1>About <span class="text-primary">Captibiz</span></h1>
+                    <p>We're a team of experienced business consultants dedicated to helping entrepreneurs turn their visions into successful, fundable businesses. With over 15 years of combined experience, we've helped hundreds of businesses secure millions in funding.</p>
                 </div>
             </div>
         </section>
 
-        <section class="services">
+        <!-- Enhanced company story section with more detailed content -->
+        <section class="company-story">
             <div class="container">
                 <div class="section-header">
                     <h2>Our <span class="text-primary">Story</span></h2>
-                    <p>Founded by seasoned business professionals with over 15 years of combined experience in business planning, financial modeling, and startup consulting.</p>
+                    <p>Founded by seasoned business professionals with a passion for entrepreneurship and a commitment to making professional business consulting accessible to everyone.</p>
                 </div>
 
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i data-lucide="users"></i>
-                        </div>
-                        <h3>Expert Team</h3>
-                        <p>Our consultants have MBA degrees and extensive experience across multiple industries including technology, healthcare, manufacturing, and retail.</p>
-                    </div>
-
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i data-lucide="target"></i>
-                        </div>
-                        <h3>Proven Results</h3>
-                        <p>We've helped over 500 businesses secure more than $50M in funding through our comprehensive business plans and financial models.</p>
-                    </div>
-
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i data-lucide="globe"></i>
-                        </div>
-                        <h3>Immigration Expertise</h3>
-                        <p>Specialized knowledge in investor visa requirements including E-2, EB-5, and other immigration investment programs.</p>
+                <div class="story-content">
+                    <div class="story-text">
+                        <p>Captibiz was born from a simple observation: too many great business ideas never see the light of day because entrepreneurs lack access to professional business planning services. Traditional consulting firms charge premium rates that put quality business plans out of reach for most startups and small businesses.</p>
+                        
+                        <p>Our founders, with backgrounds in investment banking, management consulting, and entrepreneurship, decided to change that. By leveraging technology and streamlined processes, we've created a model that delivers the same quality as top-tier consulting firms at a fraction of the cost.</p>
+                        
+                        <p>Since our founding, we've helped over 500 businesses across diverse industries secure more than $50 million in funding. Our success stories range from tech startups raising Series A rounds to immigrant entrepreneurs obtaining investor visas to established businesses securing SBA loans for expansion.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="why-choose-us">
+        <!-- Added team section with detailed expertise -->
+        <section class="team-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Our <span class="text-primary">Mission</span></h2>
-                    <p>To democratize access to professional business consulting services by providing high-quality, affordable solutions that help entrepreneurs succeed.</p>
+                    <h2>Our <span class="text-primary">Expert Team</span></h2>
+                    <p>Meet the experienced professionals behind Captibiz's success.</p>
                 </div>
 
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i data-lucide="award"></i>
-                            </div>
-                            <div>
-                                <h3>Quality First</h3>
-                                <p>Every business plan is custom-crafted with thorough research and industry-specific insights.</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-info">
+                            <h3>Sarah Mitchell</h3>
+                            <p class="member-title">Founder & CEO</p>
+                            <p class="member-description">Former investment banker with 12+ years at Goldman Sachs. MBA from Wharton. Specializes in financial modeling and investor presentations.</p>
+                            <div class="member-expertise">
+                                <span class="expertise-tag">Financial Modeling</span>
+                                <span class="expertise-tag">Investment Banking</span>
+                                <span class="expertise-tag">Fundraising</span>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i data-lucide="clock"></i>
-                            </div>
-                            <div>
-                                <h3>Fast Delivery</h3>
-                                <p>We understand time is critical for entrepreneurs. Most projects are completed within 5-7 business days.</p>
+                    <div class="team-member">
+                        <div class="member-info">
+                            <h3>Michael Chen</h3>
+                            <p class="member-title">Senior Business Consultant</p>
+                            <p class="member-description">Former McKinsey consultant with expertise in strategy and operations. MBA from Stanford. Leads our business plan writing team.</p>
+                            <div class="member-expertise">
+                                <span class="expertise-tag">Strategy Consulting</span>
+                                <span class="expertise-tag">Market Analysis</span>
+                                <span class="expertise-tag">Operations</span>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i data-lucide="shield"></i>
-                            </div>
-                            <div>
-                                <h3>Confidentiality</h3>
-                                <p>Your business information is protected with enterprise-grade security and strict confidentiality agreements.</p>
+                    <div class="team-member">
+                        <div class="member-info">
+                            <h3>Elena Rodriguez</h3>
+                            <p class="member-title">Immigration Specialist</p>
+                            <p class="member-description">Former immigration attorney with 8+ years specializing in investor visas. JD from Columbia Law. Heads our visa documentation services.</p>
+                            <div class="member-expertise">
+                                <span class="expertise-tag">Immigration Law</span>
+                                <span class="expertise-tag">E-2 Visas</span>
+                                <span class="expertise-tag">EB-5 Programs</span>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-info">
+                            <h3>David Thompson</h3>
+                            <p class="member-title">SBA Loan Specialist</p>
+                            <p class="member-description">Former SBA loan officer with 10+ years in commercial lending. CPA with expertise in financial analysis and loan packaging.</p>
+                            <div class="member-expertise">
+                                <span class="expertise-tag">SBA Loans</span>
+                                <span class="expertise-tag">Commercial Lending</span>
+                                <span class="expertise-tag">Financial Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced mission and values section -->
+        <section class="mission-values">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our <span class="text-primary">Mission & Values</span></h2>
+                    <p>The principles that guide everything we do at Captibiz.</p>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To democratize access to professional business consulting services by providing high-quality, affordable solutions that help entrepreneurs succeed and achieve their funding goals.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <h3>Excellence</h3>
+                        <p>We maintain the highest standards in every project, ensuring each business plan meets professional requirements and exceeds client expectations.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3>Accessibility</h3>
+                        <p>Professional business consulting shouldn't be limited to large corporations. We make expert services accessible to startups and small businesses.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <h3>Integrity</h3>
+                        <p>We operate with complete transparency, maintain strict confidentiality, and always act in our clients' best interests.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>We continuously improve our processes and leverage technology to deliver better results faster and more efficiently.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="heart"></i>
+                        </div>
+                        <h3>Partnership</h3>
+                        <p>We view every client relationship as a partnership, providing ongoing support and guidance beyond project completion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Added achievements section -->
+        <section class="achievements">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our <span class="text-primary">Achievements</span></h2>
+                    <p>The results that demonstrate our commitment to client success.</p>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-number">500+</div>
+                        <div class="achievement-label">Business Plans Created</div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-number">$50M+</div>
+                        <div class="achievement-label">Funding Secured</div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-number">90%</div>
+                        <div class="achievement-label">Loan Approval Rate</div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-number">95%</div>
+                        <div class="achievement-label">Client Satisfaction</div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-number">48</div>
+                        <div class="achievement-label">States Served</div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-number">25+</div>
+                        <div class="achievement-label">Industries Covered</div>
                     </div>
                 </div>
             </div>
@@ -141,7 +266,7 @@
                             Start Your Project
                             <i data-lucide="arrow-right"></i>
                         </a>
-                        <a href="index.html#contact" class="btn btn-outline-white btn-lg">
+                        <a href="contact.html" class="btn btn-outline-white btn-lg">
                             <i data-lucide="phone"></i>
                             Contact Us
                         </a>
@@ -165,13 +290,14 @@
                     <p>Professional business consulting services for startups, loans, and investor visas across the United States.</p>
                 </div>
 
+                <!-- Updated footer links to use separate pages -->
                 <div class="footer-section">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="index.html#services">Business Plans</a></li>
-                        <li><a href="index.html#services">Financial Modeling</a></li>
-                        <li><a href="index.html#services">Investor Visa Support</a></li>
-                        <li><a href="index.html#services">Loan Applications</a></li>
+                        <li><a href="services.html">Business Plans</a></li>
+                        <li><a href="services.html">Financial Modeling</a></li>
+                        <li><a href="services.html">Investor Visa Support</a></li>
+                        <li><a href="services.html">Loan Applications</a></li>
                     </ul>
                 </div>
 
@@ -179,9 +305,9 @@
                     <h3>Company</h3>
                     <ul>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="index.html#pricing">Pricing</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 

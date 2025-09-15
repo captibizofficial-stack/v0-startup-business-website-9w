@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Captibiz | Professional Business Consulting</title>
+    <meta name="description" content="Comprehensive business consulting services including business plans, financial modeling, investor visa support, and loan applications. Expert solutions for your business needs.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i data-lucide="bar-chart-3"></i>
+                    </div>
+                    <span class="logo-text">Captibiz</span>
+                </a>
+
+                <nav class="nav-desktop">
+                    <a href="services.html" class="nav-link active">Services</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="cta-desktop">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="get-started.html" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+
+            <div class="nav-mobile hidden" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="services.html" class="nav-link active" onclick="closeMobileMenu()">Services</a>
+                    <a href="pricing.html" class="nav-link" onclick="closeMobileMenu()">Pricing</a>
+                    <a href="about.html" class="nav-link" onclick="closeMobileMenu()">About</a>
+                    <a href="contact.html" class="nav-link" onclick="closeMobileMenu()">Contact</a>
+                    <div class="mobile-cta">
+                        <a href="login.html" class="btn btn-outline">Login</a>
+                        <a href="get-started.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1>Our <span class="text-primary">Expert Services</span></h1>
+                    <p>Comprehensive business consulting solutions designed to help you succeed at every stage of your entrepreneurial journey. From startup planning to investor presentations, we've got you covered.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card featured">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i data-lucide="file-text"></i>
+                            </div>
+                            <div>
+                                <h3>Business Plan Writing</h3>
+                                <p>Comprehensive business plans tailored for your industry and goals. Perfect for startups, expansions, and strategic planning.</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-details">
+                                <h4>What's Included:</h4>
+                                <ul class="feature-list">
+                                    <li>Executive Summary & Company Overview</li>
+                                    <li>Market Analysis & Industry Research</li>
+                                    <li>Competitive Analysis & Positioning</li>
+                                    <li>Marketing & Sales Strategy</li>
+                                    <li>Operations & Management Plan</li>
+                                    <li>Financial Projections & Analysis</li>
+                                    <li>Risk Assessment & Mitigation</li>
+                                    <li>Implementation Timeline</li>
+                                </ul>
+                            </div>
+                            <div class="service-footer">
+                                <span class="price">Starting at $497</span>
+                                <a href="get-started.html" class="btn btn-primary">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i data-lucide="trending-up"></i>
+                            </div>
+                            <div>
+                                <h3>Financial Modeling</h3>
+                                <p>Detailed financial projections and modeling to demonstrate your business viability and growth potential.</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-details">
+                                <h4>What's Included:</h4>
+                                <ul class="feature-list">
+                                    <li>5-Year Financial Projections</li>
+                                    <li>Cash Flow Analysis & Forecasting</li>
+                                    <li>Break-even Analysis</li>
+                                    <li>Scenario Planning (Best/Worst/Realistic)</li>
+                                    <li>Revenue & Cost Modeling</li>
+                                    <li>Sensitivity Analysis</li>
+                                    <li>Key Performance Indicators (KPIs)</li>
+                                    <li>Investment Requirements Analysis</li>
+                                </ul>
+                            </div>
+                            <div class="service-footer">
+                                <span class="price">Starting at $397</span>
+                                <a href="get-started.html" class="btn btn-primary">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i data-lucide="globe"></i>
+                            </div>
+                            <div>
+                                <h3>Investor Visa Support</h3>
+                                <p>Specialized documentation for E-2, EB-5, and other investor visa applications with immigration expertise.</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-details">
+                                <h4>What's Included:</h4>
+                                <ul class="feature-list">
+                                    <li>USCIS Compliant Business Plans</li>
+                                    <li>Investment Analysis & Documentation</li>
+                                    <li>Job Creation Plans & Projections</li>
+                                    <li>Economic Impact Analysis</li>
+                                    <li>Legal Documentation Support</li>
+                                    <li>Immigration Attorney Coordination</li>
+                                    <li>Visa Interview Preparation</li>
+                                    <li>Supporting Evidence Compilation</li>
+                                </ul>
+                            </div>
+                            <div class="service-footer">
+                                <span class="price">Starting at $897</span>
+                                <a href="get-started.html" class="btn btn-primary">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i data-lucide="dollar-sign"></i>
+                            </div>
+                            <div>
+                                <h3>Loan Applications</h3>
+                                <p>SBA loan packages and bank financing applications with proven success rates.</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-details">
+                                <h4>What's Included:</h4>
+                                <ul class="feature-list">
+                                    <li>SBA Loan Package Preparation</li>
+                                    <li>Bank Presentation Materials</li>
+                                    <li>Credit Analysis & Improvement</li>
+                                    <li>Collateral Assessment</li>
+                                    <li>Loan Application Completion</li>
+                                    <li>Financial Statement Preparation</li>
+                                    <li>Lender Matching & Introduction</li>
+                                    <li>Application Follow-up Support</li>
+                                </ul>
+                            </div>
+                            <div class="service-footer">
+                                <span class="price">Starting at $597</span>
+                                <a href="get-started.html" class="btn btn-primary">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <div>
+                                <h3>Pitch Deck Creation</h3>
+                                <p>Investor-ready pitch decks that tell your story and secure funding.</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-details">
+                                <h4>What's Included:</h4>
+                                <ul class="feature-list">
+                                    <li>Professional Slide Design</li>
+                                    <li>Compelling Story Development</li>
+                                    <li>Market Opportunity Analysis</li>
+                                    <li>Business Model Visualization</li>
+                                    <li>Financial Highlights</li>
+                                    <li>Team & Advisory Board</li>
+                                    <li>Q&A Preparation Materials</li>
+                                    <li>Presentation Coaching Session</li>
+                                </ul>
+                            </div>
+                            <div class="service-footer">
+                                <span class="price">Starting at $697</span>
+                                <a href="get-started.html" class="btn btn-primary">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i data-lucide="shield"></i>
+                            </div>
+                            <div>
+                                <h3>Due Diligence Support</h3>
+                                <p>Comprehensive due diligence packages for acquisitions and investments.</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-details">
+                                <h4>What's Included:</h4>
+                                <ul class="feature-list">
+                                    <li>Financial Audit & Analysis</li>
+                                    <li>Risk Assessment & Mitigation</li>
+                                    <li>Business Valuation Analysis</li>
+                                    <li>Legal & Compliance Review</li>
+                                    <li>Market Position Assessment</li>
+                                    <li>Operational Efficiency Review</li>
+                                    <li>Management Team Evaluation</li>
+                                    <li>Integration Planning Support</li>
+                                </ul>
+                            </div>
+                            <div class="service-footer">
+                                <span class="price">Starting at $797</span>
+                                <a href="get-started.html" class="btn btn-primary">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our <span class="text-primary">Process</span></h2>
+                    <p>We follow a proven methodology to ensure your project is completed on time and exceeds expectations.</p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Initial Consultation</h3>
+                            <p>We start with a comprehensive consultation to understand your business, goals, and specific requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Research & Analysis</h3>
+                            <p>Our team conducts thorough market research and competitive analysis specific to your industry.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Document Creation</h3>
+                            <p>We create your customized business documents using industry best practices and proven templates.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Review & Refinement</h3>
+                            <p>You review the draft and we incorporate your feedback to ensure the final product meets your expectations.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Final Delivery</h3>
+                            <p>We deliver your completed documents along with ongoing support for any questions or updates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h2>Ready to Get Started?</h2>
+                        <p>Choose the service that best fits your needs and let our experts help you achieve your business goals.</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="get-started.html" class="btn btn-secondary btn-lg">
+                            Start Your Project
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-white btn-lg">
+                            <i data-lucide="phone"></i>
+                            Free Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-icon">
+                            <i data-lucide="bar-chart-3"></i>
+                        </div>
+                        <span class="logo-text">Captibiz</span>
+                    </a>
+                    <p>Professional business consulting services for startups, loans, and investor visas across the United States.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Business Plans</a></li>
+                        <li><a href="services.html">Financial Modeling</a></li>
+                        <li><a href="services.html">Investor Visa Support</a></li>
+                        <li><a href="services.html">Loan Applications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i data-lucide="mail"></i>
+                            <span>info@captibiz.com</span>
+                        </li>
+                        <li>
+                            <i data-lucide="phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <span>New York, NY</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Captibiz. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

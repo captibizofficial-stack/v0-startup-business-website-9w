@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Captibiz | Get Your Free Consultation</title>
+    <meta name="description" content="Contact Captibiz for professional business consulting services. Get your free consultation and start your project today.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i data-lucide="bar-chart-3"></i>
+                    </div>
+                    <span class="logo-text">Captibiz</span>
+                </a>
+
+                <nav class="nav-desktop">
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </nav>
+
+                <div class="cta-desktop">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="get-started.html" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+
+            <div class="nav-mobile hidden" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="services.html" class="nav-link" onclick="closeMobileMenu()">Services</a>
+                    <a href="pricing.html" class="nav-link" onclick="closeMobileMenu()">Pricing</a>
+                    <a href="about.html" class="nav-link" onclick="closeMobileMenu()">About</a>
+                    <a href="contact.html" class="nav-link active" onclick="closeMobileMenu()">Contact</a>
+                    <div class="mobile-cta">
+                        <a href="login.html" class="btn btn-outline">Login</a>
+                        <a href="get-started.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1>Get In <span class="text-primary">Touch</span></h1>
+                    <p>Ready to start your project? Contact us today for a free consultation and let our experts help you achieve your business goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-detailed">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@captibiz.com</p>
+                                <span>We respond within 2 hours</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <span>Mon-Fri 9AM-6PM EST</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h3>Location</h3>
+                                <p>New York, NY</p>
+                                <span>Serving clients nationwide</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div>
+                                <h3>Response Time</h3>
+                                <p>Within 2 hours</p>
+                                <span>During business hours</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" onsubmit="handleContactForm(event)">
+                        <div class="form-header">
+                            <h2>Send us a message</h2>
+                            <p>Fill out the form below and we'll get back to you within 2 hours.</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="business-plan">Business Plan Writing</option>
+                                <option value="financial-modeling">Financial Modeling</option>
+                                <option value="investor-visa">Investor Visa Support</option>
+                                <option value="loan-application">Loan Applications</option>
+                                <option value="pitch-deck">Pitch Deck Creation</option>
+                                <option value="due-diligence">Due Diligence Support</option>
+                                <option value="consultation">Free Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-500">Under $500</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2500">$1,000 - $2,500</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="over-5000">Over $5,000</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="asap">ASAP (Rush delivery)</option>
+                                <option value="1-week">Within 1 week</option>
+                                <option value="2-weeks">Within 2 weeks</option>
+                                <option value="1-month">Within 1 month</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, goals, and any specific requirements..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for business tips and updates
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                            <i data-lucide="send"></i>
+                        </button>
+
+                        <p class="form-note">
+                            By submitting this form, you agree to our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-service.html">Terms of Service</a>.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Common <span class="text-primary">Questions</span></h2>
+                    <p>Quick answers to frequently asked questions about our services and process.</p>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How quickly can you start my project?</h3>
+                        <p>We can typically start your project within 24-48 hours of receiving your requirements and initial payment. Rush projects can begin the same day.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Do you work with businesses outside the US?</h3>
+                        <p>Yes, we work with international clients, especially those seeking to enter the US market or apply for US investor visas.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What information do you need to get started?</h3>
+                        <p>We'll need basic information about your business, industry, target market, and specific goals. We'll guide you through the information gathering process.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Can I speak with someone before starting?</h3>
+                        <p>We offer free 15-minute consultations to discuss your project and answer any questions you may have.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-icon">
+                            <i data-lucide="bar-chart-3"></i>
+                        </div>
+                        <span class="logo-text">Captibiz</span>
+                    </a>
+                    <p>Professional business consulting services for startups, loans, and investor visas across the United States.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Business Plans</a></li>
+                        <li><a href="services.html">Financial Modeling</a></li>
+                        <li><a href="services.html">Investor Visa Support</a></li>
+                        <li><a href="services.html">Loan Applications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i data-lucide="mail"></i>
+                            <span>info@captibiz.com</span>
+                        </li>
+                        <li>
+                            <i data-lucide="phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <span>New York, NY</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Captibiz. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
